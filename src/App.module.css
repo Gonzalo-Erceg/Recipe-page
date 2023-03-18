@@ -1,0 +1,315 @@
+
+.app{
+    max-width: 969px;
+    margin:auto
+}
+
+
+.app img{
+    width: 100%;
+   
+}
+
+
+.subText{
+   display: grid;
+   grid-template-columns: 14px 1fr;
+   align-items: baseline;
+   gap:12px;
+   margin-bottom: 43px;
+   
+}
+
+
+.subText span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4F4F4F;
+    font-style: italic;
+    line-height: 17px;
+    max-width: 592px;
+}
+
+.ingredientContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:48px;
+    margin-bottom: 28px;
+}
+.ingredient{
+    max-width: 600px;
+    margin-top: 38px;
+}
+
+.ingredient ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.ingredient ul{
+    display: flex;
+    flex-direction: column;
+    gap:13px
+}
+.ingredient ul li span span{
+    font-weight: 700;
+   
+}
+
+.custom_checkbox{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+
+.checkbox{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 21px 1fr;
+    gap:17px
+}
+
+.checkbox > input{
+    display: none;
+}
+.custom_checkbox::after{
+    content:url("./assets/controlar.svg");
+    position: absolute;
+   
+    background: #F2994A;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 50% 50%);
+    transition: .1s ease-in;
+}
+
+.checkbox > input:checked + .custom_checkbox::after{
+    clip-path: circle(70.7% at 50% 50%);
+}
+
+.timeCard{
+    width: 216px;
+    height: 367px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.timeCard ul{
+    display: flex;
+    flex-direction: column;
+    gap:42px
+}
+
+.timeCard ul li{
+    display: flex;
+    align-items: center;
+    gap:14px
+    
+}
+
+.timeCard ul li div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.timeCard ul li div span:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+    line-height: 12px;
+    text-transform: uppercase;
+
+}
+
+.timeCard ul li div span:last-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight:  500;
+    line-height: 17px;
+}
+.timeCard ul li:first-child div span:last-child{
+    color:#F2994A;
+
+}
+.timeCard_hidden{
+    display: none;
+}
+.timeCard_hidden ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat((3,1fr));
+   
+    
+}
+.timeCard_hidden ul li:first-child{
+    grid-column: 1/4;
+}
+
+
+
+.timeCard_hidden{
+    width: 100%;
+    box-shadow: none;
+    height: fit-content;
+}
+.timeCard_hidden ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.instructionsList li div{
+    width: 36px;
+    height: 36px;
+    background: #F2994A;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    color:#fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.instructionsList li div span{
+    transform: translateY(-10%);
+}
+
+.instructionsList li{
+    width: 100;
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap:15px
+}
+
+.instructionsList li p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 528px;
+    
+
+}
+.instructionsList{
+    display: flex;
+    flex-direction: column;
+    gap:38px;
+    margin-top: 28px;
+    margin-bottom: 57px;
+}
+.instructionsList li p span{
+    font-weight: 700;
+}
+.source{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BDBDBD;
+    
+
+}
+
+.source a{
+    color: #BDBDBD;
+    text-decoration: none;
+}
+
+.source a:hover{
+    text-decoration: underline;
+    color:#F2994A
+}
+
+.footer{
+    
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+    line-height: 17px;
+    overflow-wrap: break-all;
+}
+
+.footer span{
+    font-weight: 700;
+}
+
+.footer a{
+    color: #828282;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    color:#F2994A
+}
+
+
+
+@media (max-width:815px){
+    .ingredientContainer{
+        flex-direction: column;
+    }
+    .timeCard{
+        display: none;
+    }
+    .timeCard_hidden{
+        display: block;
+    }
+
+}
+
+
+@media (max-width:540px){
+    .subText span{
+        font-size: 12px;
+    }
+    .ingredient ul li{
+        font-size: 14px;
+    }
+    .instructionsList li p{
+        font-size: 16px;
+    }
+    .timeCard ul li{
+        gap:5px
+    }
+    .timeCard ul li div span:first-child{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .timeCard ul li div span:last-child{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .source{
+        font-size: 12px;
+    }
+ 
+}

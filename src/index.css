@@ -1,0 +1,63 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  
+}
+
+body{
+  margin:0px 13px ;
+  padding-bottom: 100px;
+  position: relative
+}
+li{
+  list-style: none;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+h4{
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
+@media (max-width:540px){
+  h1{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 16px ;
+  }
+  h4{
+    margin-top: 17px;
+    margin-bottom: 23px;
+  }
+}
